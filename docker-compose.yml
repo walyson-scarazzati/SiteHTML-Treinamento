@@ -1,0 +1,14 @@
+version: '2'
+services:
+  web:
+    image: walysonsilva/site-treinamento:v1
+    build: .
+    restart: always
+    ports:
+      - '8032:80'
+  web2:
+    image: walysonsilva/site-treinamento:v1
+    build: .
+    restart: always
+    ports:
+      - '8033:80'
